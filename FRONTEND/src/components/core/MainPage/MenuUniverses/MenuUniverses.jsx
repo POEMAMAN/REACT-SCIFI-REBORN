@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
 import ListUniverses from "./ListUniverses";
-import SearchUniverse from "./SearchUniverse";
+// import SearchUniverse from "./SearchUniverse";
 
 function MenuUniverses() {
   const [universes, setUniverses] = useState([]);
@@ -43,12 +43,11 @@ function MenuUniverses() {
     <>
     <div className="container-Universes">
       <h2 className="container-Universes-title">Universos de Ciencia Ficcion</h2>
-      <SearchUniverse
+      {/* <SearchUniverse
         changeSearch={changeSearch}
         search={search}
         filterUniverses={filterUniverses}
-      />
-      <SelectUniverse changeSearch={changeSearch} universes={universes}/>
+      /> */}
       <ListUniverses filteredArray={filteredArray} />
       </div>
     </>

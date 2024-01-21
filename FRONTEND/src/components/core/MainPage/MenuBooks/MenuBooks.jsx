@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
-import SelectSerie from "./SelectSerie";
 import ListBooks from "./ListBooks";
 import SearchBook from "./SearchBook";
 
 function MenuBooks() {
-  const [serie, setSerie] = useState("Honorverse");
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
@@ -25,12 +23,8 @@ function MenuBooks() {
     } catch (error) {
       console.log(error);
     }
-  }, [serie]);
+  }, []);
 
-
-  const changeSerie = (value) => {
-    setSerie(value);
-  };
 
   const changeSearch = (value) => {
     setSearch(value);
