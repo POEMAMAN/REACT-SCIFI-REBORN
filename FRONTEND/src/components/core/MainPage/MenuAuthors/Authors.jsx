@@ -7,7 +7,7 @@ function Authors({ author }) {
       <p>{author.author}</p>
       <p>{author.countrie}</p>
       <p>{author.life}</p>
-      <p>{author.resume}</p>
+      <p className="resume">{author.resume}</p>
       {author.picture ? <img className="author-image" src={author.picture} alt={`Imagen de ${author.title}`} /> : <img className="author-image" src={img} />}
     </article>
   );

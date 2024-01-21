@@ -13,7 +13,7 @@ function Universes({ universe }) {
       <p>{universe.sagas5}</p>
       <p>{universe.sagas6}</p>
       <p>{universe.sagas7}</p>
-      <p>{universe.resume}</p>
+      <p className="resume">{universe.resume}</p>
       {universe.picture ? <img className="universe-image" src={universe.picture} alt={`Imagen de ${universe.title}`} /> : <img className="universe-image" src={img} />}
     </article>
   );

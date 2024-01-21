@@ -108,9 +108,14 @@ body {
 p, h2, label {
   font: 150 2rem Raleway, sans-serif;
   text-decoration:solid;
-  color:#0cf5f5;
+  color:#6ef2fc;
+  font-style: var(--fill-color);
   font-weight:900;
+  -webkit-text-stroke: 2px rgb(20, 6, 138);
+  color: #bae6e9;
 }
+
+
 
 h1 {
   font-size: 3.2em;
@@ -276,6 +281,9 @@ button {
   align-items: flex-start;
   justify-content: center;
 } 
+.resume {
+  text-align: justify;
+}
 
 .bookCard {
   border: 1px solid #ddd;
@@ -290,20 +298,20 @@ button {
 .authorCard {
   border: 1px solid #ddd;
   border-radius: 300px;
-  padding: 0% 12% 0 3%;
-  margin: 0% 0% 0% 0%;
-  width: 80vw;
+  padding: 0% 3% 0 3%;
+  margin: 0% 3% 0% 3%;
+  width: 90vw;
   height: 5%;
-  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705858982/_62bfe8a2-a4a4-42bf-b795-d9c3027df289_yui5ag.jpg);
+  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705861652/_6a9984a2-6e92-49a6-8f2c-42ae7b47600c_iyfjde.jpg);
   background-size:auto;
   align-content: center;
 }
 .awardCard {
   border: 1px solid #ddd;
   border-radius: 300px;
-  padding: 0% 12% 0 3%;
-  margin: 0% 0% 0% 0%;
-  width: 80vw;
+  padding: 0% 3% 0 3%;
+  margin: 0% 3% 0% 3%;
+  width: 90vw;
   height: 5%;
   background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705862448/invest-2-sci-fi_ig3tjq.webp);
   background-size:auto;
@@ -312,11 +320,11 @@ button {
 .universeCard {
   border: 1px solid #ddd;
   border-radius: 300px;
-  padding: 0% 0% 0 3%;
-  margin: 0% 0% 0% 0%;
-  width: 80vw;
+  padding: 0% 3% 0 3%;
+  margin: 0% 3% 0% 3%;
+  width: 90vw;
   height: 5%;
-  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705861652/_6a9984a2-6e92-49a6-8f2c-42ae7b47600c_iyfjde.jpg);
+  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705867218/_38e4847d-3502-4eda-ba90-62dda515e320_rlodmu.jpg);
   background-size:cover;
   align-content: center;
 
