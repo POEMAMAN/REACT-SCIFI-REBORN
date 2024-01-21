@@ -1,0 +1,86 @@
+.register-container-box {
+  position: absolute;
+  top: 20%;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  margin-top: 5%;
+    &-title {
+      background: linear-gradient(yellow, orange);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px black;
+      filter: drop-shadow(2px 2px #ff0080);
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      margin:  20px 20px;
+    }
+    &-userBox {
+      position: relative;
+      padding: 10px;
+        &-label {
+          position: absolute;
+          top: -33px;;
+          left: 15px;
+          padding: 10px 0;
+          font-size: 20px;
+          font-weight: bold;
+          color: blueviolet;
+          pointer-events: none;
+          transition: .5s;
+        }
+        &-input {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          background: transparent;
+            &:focus ~ label, :valid ~ label {
+              top: -30px;
+              left: 0;
+              color: blueviolet;
+              font-size: 25px;
+              font-weight: bold;
+            }
+        }
+    }
+}
+.register-container-box-button{
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand,sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+    &:hover {
+      color: #262a2b;
+    }
+    &:before {
+      left: 0;
+      opacity: 1;
+    }
+}
