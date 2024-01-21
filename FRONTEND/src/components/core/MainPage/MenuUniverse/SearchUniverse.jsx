@@ -1,4 +1,4 @@
-function SearchAuthor({ changeSearch, search, filterAuthors }) {
+function SearchUniverse({ changeSearch, search, filterUniverses }) {
   const handleInput = (event) => {
     changeSearch(event.target.value);
   };
@@ -8,11 +8,11 @@ function SearchAuthor({ changeSearch, search, filterAuthors }) {
   };
   const handleSearch = (event) => {
     event.preventDefault();
-    filterAuthors();
+    filterUniverses();
   };
   return (
     <form>
-      <label htmlFor="">Dime que Autor quieres consultar</label>
+      <label htmlFor="">¿Que universo buscas?</label>
       <input type="text" name="" id="" onChange={handleInput} value={search} />
       <input type="submit" value="Buscar" onClick={handleSearch} />
       <input type="submit" value="Cancelar" onClick={handleCancel} />
@@ -20,4 +20,4 @@ function SearchAuthor({ changeSearch, search, filterAuthors }) {
   );
 }
 
-export default SearchAuthor;
+export default SearchUniverse;

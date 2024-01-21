@@ -9,7 +9,7 @@
     "booksSeed": "node ./src/books.seeds.js",
     "authorSeed": "node ./src/author.seeds.js",
     "collectionSeed": "node ./src/collection.seeds.js",
-    "universeSeed": "node ./src/universe.seeds.js",
+    "universeSeed": "node C:/Users/luisc/BOOTCAMP/REACT/REACT-SCIFI-REBORN/BACKEND/src/seeds/universe.seeds.js",
     "images": "node ./src/api/images/upload.js"
   },
   "keywords": [],

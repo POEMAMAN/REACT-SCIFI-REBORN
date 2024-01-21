@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
 import ListUniverses from "./ListUniverses";
-// import SearchUniverse from "./SearchUniverse";
+import SearchUniverse from "./SearchUniverse";
 
 function MenuUniverses() {
   const [universes, setUniverses] = useState([]);
@@ -10,7 +10,7 @@ function MenuUniverses() {
 
   useEffect(() => {
     try {
-      API.get(`http://localhost:5000/books`)
+      API.get(`http://localhost:5000/universes`)
         .then(
           (resp) => {
             setUniverses(resp.data);
@@ -24,9 +24,6 @@ function MenuUniverses() {
       console.log(error);
     }
   }, [universes]);
-  
-
-
 
 
   const changeSearch = (value) => {
@@ -34,7 +31,7 @@ function MenuUniverses() {
   };
   const filterUniverses = () => {
     const newArray = universes.filter((eachUniverse) =>
-      eachUniverse.title.toLowerCase().includes(search.toLowerCase())
+      eachUniverse.nameUniverse.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredArray(newArray);
   };
@@ -42,12 +39,12 @@ function MenuUniverses() {
   return (
     <>
     <div className="container-Universes">
-      <h2 className="container-Universes-title">Universos de Ciencia Ficcion</h2>
-      {/* <SearchUniverse
+      <h2 className="container-Universes-title"></h2>
+      <SearchUniverse
         changeSearch={changeSearch}
         search={search}
         filterUniverses={filterUniverses}
-      /> */}
+      />
       <ListUniverses filteredArray={filteredArray} />
       </div>
     </>

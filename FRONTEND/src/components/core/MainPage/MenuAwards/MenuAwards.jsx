@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
-import ListBooks from "./ListBooks";
-import SearchBook from "./SearchBook";
+import ListAwards from "./ListAwards";
+import SearchAward from "./SearchAward";
 
-function MenuBooks() {
-  const [books, setBooks] = useState([]);
+function MenuAwards() {
+  const [awards, setAwards] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
 
   useEffect(() => {
     try {
-      API.get(`http://localhost:5000/books`)
+      API.get(`http://localhost:5000/awards`)
         .then(
           (resp) => {
-            setBooks(resp.data);
+            setAwards(resp.data);
             setFilteredArray(resp.data);
           },
           (error) => {
@@ -29,25 +29,25 @@ function MenuBooks() {
   const changeSearch = (value) => {
     setSearch(value);
   };
-  const filterBooks = () => {
-    const newArray = books.filter((eachBook) =>
-      eachBook.title.toLowerCase().includes(search.toLowerCase())
+  const filterAwards = () => {
+    const newArray = awards.filter((eachAward) =>
+      eachAward.title.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredArray(newArray);
   };
 
   return (
     <>
-    <div className="container-Books">
-      <h2 className="container-Books-title"></h2>
-      <SearchBook
+    <div className="container-Awards">
+      <h2 className="container-Awards-title"></h2>
+      <SearchAward
         changeSearch={changeSearch}
         search={search}
-        filterBooks={filterBooks}
+        filterAwards={filterAwards}
       />
-      <ListBooks filteredArray={filteredArray} />
+      <ListAwards filteredArray={filteredArray} />
       </div>
     </>
   );
 }
-export default MenuBooks;
+export default MenuAwards;

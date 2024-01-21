@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
-// import SelectSerie from "./SelectSerie";
 import ListAuthors from "./ListAuthors";
-// import SearchAuthor from "./SearchAuthor";
+import SearchAuthor from "./SearchAuthor";
 
 function MenuAuthors() {
   const [authors, setAuthors] = useState([]);
@@ -27,17 +26,14 @@ function MenuAuthors() {
   }, []);
 
 
-  // const changeSerie = (value) => {
-  //   setSerie(value);
-  // };
 
   const changeSearch = (value) => {
     setSearch(value);
   };
   const filterAuthors = () => {
     const newArray = authors.filter((eachAuthor) =>
-      eachAuthor.title.toLowerCase().includes(search.toLowerCase())
-    );
+      eachAuthor.author.toLowerCase().includes(search.toLowerCase()));
+    console.log(search)
     setFilteredArray(newArray);
   };
 
@@ -45,11 +41,11 @@ function MenuAuthors() {
     <>
     <div className="container-Authors">
       <h2 className="container-Authors-title">Autores de Ciencia Ficcion</h2>
-      {/* <SearchAuthor
+      <SearchAuthor
         changeSearch={changeSearch}
         search={search}
         filterAuthors={filterAuthors}
-      /> */}
+      />
       <ListAuthors filteredArray={filteredArray} />
       </div>
     </>

@@ -8,8 +8,9 @@ import MainPage from './core/MainPage/MainPage';
 import AuthRoute from './core/AuthRoutes';
 import Footer from './core/Footer';
 import MenuBooks from './core/MainPage/MenuBooks/MenuBooks';
-import MenuUniverses from './core/MainPage/MenuUniverses/MenuUniverses';
 import MenuAuthors from './core/MainPage/MenuAuthors/MenuAuthors';
+import MenuUniverses from './core/MainPage/MenuUniverse/MenuUniverses';
+import MenuAwards from './core/MainPage/MenuAwards/MenuAwards';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/main/menuBooks" element={<AuthRoute component={<MenuBooks/>} />} />
           <Route path="/main/menuAuthors" element={<AuthRoute component={<MenuAuthors/>} />} />
           <Route path="/main/menuUniverses" element={<AuthRoute component={<MenuUniverses />} />} />
+          <Route path="/main/menuAwards" element={<AuthRoute component={<MenuAwards />} />} />
         </Routes>
         <Footer/>
       </div>

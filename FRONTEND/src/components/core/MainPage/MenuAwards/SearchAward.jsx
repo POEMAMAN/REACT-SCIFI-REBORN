@@ -1,4 +1,4 @@
-function SearchAuthor({ changeSearch, search, filterAuthors }) {
+function SearchAward({ changeSearch, search, filterAwards }) {
   const handleInput = (event) => {
     changeSearch(event.target.value);
   };
@@ -8,11 +8,11 @@ function SearchAuthor({ changeSearch, search, filterAuthors }) {
   };
   const handleSearch = (event) => {
     event.preventDefault();
-    filterAuthors();
+    filterAwards();
   };
   return (
     <form>
-      <label htmlFor="">Dime que Autor quieres consultar</label>
+      <label htmlFor="">Indica el libro</label>
       <input type="text" name="" id="" onChange={handleInput} value={search} />
       <input type="submit" value="Buscar" onClick={handleSearch} />
       <input type="submit" value="Cancelar" onClick={handleCancel} />
@@ -20,4 +20,4 @@ function SearchAuthor({ changeSearch, search, filterAuthors }) {
   );
 }
 
-export default SearchAuthor;
+export default SearchAward;

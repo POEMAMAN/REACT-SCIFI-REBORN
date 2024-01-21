@@ -6,7 +6,8 @@ function Authors({ author }) {
     <article className="authorCard">
       <p>{author.author}</p>
       <p>{author.countrie}</p>
-      <p>{author.books}</p>
+      <p>{author.life}</p>
+      <p>{author.resume}</p>
       {author.picture ? <img className="author-image" src={author.picture} alt={`Imagen de ${author.title}`} /> : <img className="author-image" src={img} />}
     </article>
   );

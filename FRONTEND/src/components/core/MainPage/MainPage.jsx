@@ -23,6 +23,9 @@ function MainPage() {
           <li>
           <Link to="/main/menuUniverses">Universes <img className="img-menu" src="https://res.cloudinary.com/dqfaa272n/image/upload/v1705792137/MenuUniverses_fwqylw.jpg" alt="Universes" /></Link>
           </li>
+          <li>
+          <Link to="/main/menuAwards">Awards <img className="img-menu" src="https://res.cloudinary.com/dqfaa272n/image/upload/v1705862888/_163f4e1f-5d8f-4ff4-86f9-945c113aba7b_usd7gi.jpg" alt="Awards" /></Link>
+          </li>
         </ul>
       </div>
     </>

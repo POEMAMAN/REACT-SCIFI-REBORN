@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
-const Universe = require("../api/models/universe.model");
+const Universe = require("../api/models/universes.model");
 
 const DB_URL = process.env.DBURL;
 
@@ -18,7 +18,7 @@ const arrayUniverses =
             sagas6: "Foundation (Foundation, Foundation and Empire, Second Foundation)",
             sagas7: "Extended_Foundation (Foundation's Edge, Foundation and Earth, The End of Eternity)",
             resume: "La premisa de las historias es que, en los tiempos decadentes de un futuro Imperio Galáctico, el matemático Hari Seldon se pasa la vida desarrollando la teoría de la psicohistoria, una nueva y eficaz sociología matemática. Utilizando las leyes estadísticas de acción de masas, puede predecir el futuro de las grandes poblaciones. Seldon prevé la inminente caída del Imperio, que abarca toda la Vía Láctea, y unos años oscuros que durarán 30.000 años antes de que surja un segundo imperio. Aunque el impulso de la caída del Imperio es demasiado grande para detenerlo, Seldon idea un Plan mediante el cual 'la masa de eventos irrumpiente debe desviarse solo un poco' para limitar finalmente este interregno a solo mil años. Para implementar su Plan, Seldon crea las Fundaciones —dos grupos de científicos e ingenieros establecidos en extremos opuestos de la galaxia— para preservar el espíritu de la ciencia y la civilización, y así convertirse en las piedras angulares del nuevo imperio galáctico",
-            picture: "https://res.cloudinary.com/dqfaa272n/image/upload/v1705790130/81i5i05EgHL._SY466__tcmcyw.jpg"
+            picture: "https://res.cloudinary.com/dqfaa272n/image/upload/v1705790130/81i5i05EgHL._SY466__tcmcyw.jpg",
         },
         {
         nameUniverse: "Uplift",
@@ -77,7 +77,7 @@ mongoose.connect(DB_URL)
         const allUniverses = await Universe.find();
         if (allUniverses.length > 0) {
             await Universe.collection.drop();
-            console.log("deleted authors");
+            console.log("deleted universes");
         }
     })
     .catch((error) => console.log("error deleting Universes", error))

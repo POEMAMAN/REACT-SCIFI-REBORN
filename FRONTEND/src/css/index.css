@@ -252,10 +252,23 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction:row;
   padding: 20px;
-
 }
+.container-universes-List, .container-awards-List {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items:center;
+  padding: 20px;
+  width: 100vw;
+  flex-direction: column;
+}
+.nameUniverse {
+  text-decoration-color: #535bf2;
+  text-decoration-line:underline;
+  font-weight: bolder;
+}
+
 .container-form-title,
 .container-list-title,
 .container-list-title {
@@ -264,7 +277,7 @@ button {
   justify-content: center;
 } 
 
-.bookCard, .authorCard {
+.bookCard {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
@@ -274,8 +287,42 @@ button {
   background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1701986800/iptq5jlkrncx1rjbiccx.jpg);
   background-size:auto;
 }
+.authorCard {
+  border: 1px solid #ddd;
+  border-radius: 300px;
+  padding: 0% 12% 0 3%;
+  margin: 0% 0% 0% 0%;
+  width: 80vw;
+  height: 5%;
+  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705858982/_62bfe8a2-a4a4-42bf-b795-d9c3027df289_yui5ag.jpg);
+  background-size:auto;
+  align-content: center;
+}
+.awardCard {
+  border: 1px solid #ddd;
+  border-radius: 300px;
+  padding: 0% 12% 0 3%;
+  margin: 0% 0% 0% 0%;
+  width: 80vw;
+  height: 5%;
+  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705862448/invest-2-sci-fi_ig3tjq.webp);
+  background-size:auto;
+  align-content: center;
+}
+.universeCard {
+  border: 1px solid #ddd;
+  border-radius: 300px;
+  padding: 0% 0% 0 3%;
+  margin: 0% 0% 0% 0%;
+  width: 80vw;
+  height: 5%;
+  background-image: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1705861652/_6a9984a2-6e92-49a6-8f2c-42ae7b47600c_iyfjde.jpg);
+  background-size:cover;
+  align-content: center;
 
-.book-image, .author-image {
+}
+
+.book-image, .author-image, .universe-image {
   width: 60%;
   text-align: center;
 }
