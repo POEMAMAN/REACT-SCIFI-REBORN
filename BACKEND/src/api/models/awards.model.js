@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const awardsSchema = new Schema(
     {
         name:{type:String,require:true},
-        categories: {type: Number},
+        categories: {type:String},
         organization:{type:String},
         countrie: {type:String},
         resume: {type: String},
