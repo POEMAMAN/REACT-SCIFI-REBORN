@@ -4,7 +4,7 @@ import SelectSerie from "./SelectSerie";
 import ListBooks from "./ListBooks";
 import SearchBook from "./SearchBook";
 
-function PageBooks() {
+function MenuBooks() {
   const [serie, setSerie] = useState("Honorverse");
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
@@ -57,4 +57,4 @@ function PageBooks() {
     </>
   );
 }
-export default PageBooks;
+export default MenuBooks;

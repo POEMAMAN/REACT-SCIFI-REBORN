@@ -86,8 +86,8 @@ a:hover {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   min-width: 320px;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -124,11 +124,6 @@ h1 {
   align-items:baseline;
   justify-content: space-evenly;
 
-}
-
-.scifi {
-  padding-top: -20%;
-  padding-left: 50%;
 }
 
 html {
@@ -181,6 +176,16 @@ label {
   justify-content: space-evenly;
 
 }
+/*Main Page*/
+.mainpage {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-menu {
+  width: 95%;
+  height: 95%;
+}
 
 /*Container*/
 .container {
@@ -193,12 +198,6 @@ label {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-}
-.container-form-title,
-.container-list-titlebooks,
-.container-list-titleauthors {
-  display: flex;
-  justify-content: center;
 }
 
 form {
@@ -249,18 +248,23 @@ button {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-.container-list-titlebooks,
-.container-list-titleauthors {
-  text-decoration: underline;
-}
-/* 
-#booksList, #authorsList {
+.container-books-List, .container-authors-List {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
   padding: 20px;
-} */
 
-/* .bookCard, .authorCard {
+}
+.container-form-title,
+.container-list-title,
+.container-list-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+} 
+
+.bookCard, .authorCard {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
@@ -277,7 +281,7 @@ button {
 .I {
   text-decoration: underline;
   color: #fff;
-} */
+}
 /*Footer*/
 
 footer{

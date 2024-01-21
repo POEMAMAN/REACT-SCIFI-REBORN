@@ -1,4 +1,4 @@
-function SearchPlanet({ changeSearch, search, filterPlanets }) {
+function SearchUniverse({ changeSearch, search, filterUniverses }) {
   const handleInput = (event) => {
     changeSearch(event.target.value);
   };
@@ -8,17 +8,16 @@ function SearchPlanet({ changeSearch, search, filterPlanets }) {
   };
   const handleSearch = (event) => {
     event.preventDefault();
-    filterPlanets();
+    filterUniverses();
   };
   return (
     <form>
-      <label htmlFor="">Indica el planeta</label>
+      <label htmlFor="">¿Que universo buscas?</label>
       <input type="text" name="" id="" onChange={handleInput} value={search} />
-      {console.log(search)}
       <input type="submit" value="Buscar" onClick={handleSearch} />
       <input type="submit" value="Cancelar" onClick={handleCancel} />
     </form>
   );
 }
 
-export default SearchPlanet;
+export default SearchUniverse;
