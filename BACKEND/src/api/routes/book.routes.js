@@ -5,7 +5,7 @@ const {
   postBook,
   putBook,
   deleteBook,
-} = require('../controllers/books.controller');
+} = require('../controllers/book.controller');
 const { isAuth } = require('../../middlewares/auth');
 
 const router = express.Router();

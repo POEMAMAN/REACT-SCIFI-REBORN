@@ -1,6 +1,6 @@
-const Book = require('../models/books.model');
+const Book = require('../models/book.model');
 
-const getBooks = async (req, res) => {
+const getBooks = async (req,res) => {
   try {
     const allBooks = await Book.find();
     return res.status(200).json(allBooks);
@@ -9,7 +9,7 @@ const getBooks = async (req, res) => {
   }
 };
 
-const getOneBook = async (req, res) => {
+const getOneBook = async (req,res) => {
   try {
     const { id } = req.params;
     const oneBook = await Book.findById(id);
@@ -19,7 +19,7 @@ const getOneBook = async (req, res) => {
   }
 };
 
-const postBook = async (req, res) => {
+const postBook = async (req,res) => {
   try {
     // console.log(req.body);
     const newBook = new Book(req.body);

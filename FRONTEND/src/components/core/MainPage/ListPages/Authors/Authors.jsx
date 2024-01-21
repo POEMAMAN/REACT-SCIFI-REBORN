@@ -1,4 +1,4 @@
-import img from "../../../../../images/vintage-silhouette-bearded-man-writing-260nw-652202881_swbvxe.webp"
+import img from "../../../../images/vintage-silhouette-bearded-man-writing-260nw-652202881_swbvxe.webp"
 function Authors (author) {
 
     return( 

@@ -1,4 +1,4 @@
-import img from "../../../../../images/notImgBook_okiaba.jpg"
+import img from "../../../../images/notImgBook_okiaba.jpg"
 function Books (book) {
 
     return( 

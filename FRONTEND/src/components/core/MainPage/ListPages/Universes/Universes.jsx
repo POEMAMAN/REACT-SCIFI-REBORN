@@ -1,4 +1,4 @@
-import img from "../../../../../images/Vacío-6_jh3g7a.jpg"
+import img from "../../../../images/Vacío-6_jh3g7a.jpg"
 function Universes (universe) {
 
     return( 
