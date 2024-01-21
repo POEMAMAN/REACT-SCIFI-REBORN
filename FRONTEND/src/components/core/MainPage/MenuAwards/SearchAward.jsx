@@ -12,7 +12,7 @@ function SearchAward({ changeSearch, search, filterAwards }) {
   };
   return (
     <form>
-      <label htmlFor="">Indica el libro</label>
+      <label htmlFor="">Selecciona el premio</label>
       <input type="text" name="" id="" onChange={handleInput} value={search} />
       <input type="submit" value="Buscar" onClick={handleSearch} />
       <input type="submit" value="Cancelar" onClick={handleCancel} />
